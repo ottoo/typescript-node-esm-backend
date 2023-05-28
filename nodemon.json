@@ -1,0 +1,4 @@
+{
+  "ext": "ts,json,env",
+  "exec": "NODE_ENV=development ts-node --esm -r dotenv/config src/index.ts"
+}
