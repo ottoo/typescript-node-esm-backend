@@ -1,0 +1,20 @@
+version: "3.8"
+
+volumes:
+  psql-database:
+
+services:
+  psql-database:
+    image: postgres:13.4-alpine
+    ports:
+      - 5439:5432
+    volumes:
+      - ./database/init_db.sh:/docker-entrypoint-initdb.d/init_db.sh
+      - psql-database:/var/lib/postgresql/data
+    command:
+      postgres -c fsync=off -c synchronous_commit=off -c full_page_writes=off -c
+      random_page_cost=1.0
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      TZ: UTC
