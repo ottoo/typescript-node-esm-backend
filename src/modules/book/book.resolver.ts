@@ -2,7 +2,7 @@
 // This resolver retrieves books from the "books" array above.
 
 import { Query, Resolver } from "type-graphql";
-import { Book } from "./book.js";
+import { Book } from "./book.type.js";
 import { Service } from "typedi";
 import { BookService } from "./book.service.js";
 
