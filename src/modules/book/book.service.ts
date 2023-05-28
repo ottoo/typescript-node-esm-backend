@@ -1,19 +1,11 @@
 import { Service } from "typedi";
+import { BookRepository } from "./book.repository.js";
 
 @Service()
 export class BookService {
+  constructor(private readonly bookRepository: BookRepository) {}
+
   async getBooks() {
-    return [
-      {
-        id: "1",
-        title: "The Awakening",
-        authors: ["Kate Chopin"],
-      },
-      {
-        id: "2",
-        title: "City of Glass",
-        authors: ["Paul Auster"],
-      },
-    ];
+    return await this.bookRepository.getAllBooks();
   }
 }
