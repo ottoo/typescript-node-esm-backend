@@ -3,8 +3,13 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
+type Author {
+  id: ID!
+  name: String!
+}
+
 type Book {
-  authors: [String!]!
+  authors: [Author!]!
   id: ID!
   title: String!
 }
