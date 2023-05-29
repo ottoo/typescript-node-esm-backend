@@ -10,7 +10,8 @@
     "migration:create": "typeorm-ts-node-esm migration:create",
     "migration:run": "pnpm typeorm-ts-node-esm migration:run -d ./src/config/typeorm/cli.datasource.ts",
     "migration:revert": "pnpm typeorm-ts-node-esm migration:revert -d ./src/config/typeorm/cli.datasource.ts",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,17 @@
   "devDependencies": {
     "@types/lodash.merge": "4.6.7",
     "@types/node": "20.2.5",
+    "@typescript-eslint/eslint-plugin": "5.59.7",
+    "@typescript-eslint/parser": "5.59.7",
     "dotenv": "16.0.3",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-config-semistandard": "17.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
     "nodemon": "2.0.22",
     "prettier": "2.8.8",
     "ts-node": "10.9.1",

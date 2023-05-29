@@ -1,4 +1,4 @@
-import { MigrationInterface, QueryRunner, Table, TableColumn, TableUnique } from 'typeorm';
+import { MigrationInterface, QueryRunner, Table, TableUnique } from 'typeorm';
 
 export class AuthorTableBookId1685322497833 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
