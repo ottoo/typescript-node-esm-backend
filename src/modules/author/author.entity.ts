@@ -1,4 +1,10 @@
-import { Column, Entity, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
+import {
+  Column,
+  Entity,
+  JoinColumn,
+  ManyToMany,
+  PrimaryGeneratedColumn,
+} from "typeorm";
 import { Book } from "../book/book.entity.js";
 
 @Entity()
@@ -9,6 +15,6 @@ export class Author {
   @Column()
   name!: string;
 
-  @ManyToMany(() => Author, (author) => author.books)
+  @ManyToMany(() => Book, (book) => book.authors)
   books!: Book[];
 }
