@@ -1,5 +1,5 @@
-import { fileURLToPath } from "url";
-import { dirname } from "path";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
 // https://codingbeautydev.com/blog/javascript-dirname-is-not-defined-in-es-module-scope/
 export const fileDirName = (meta: any) => {

@@ -1,15 +1,9 @@
-import {
-  Column,
-  Entity,
-  JoinColumn,
-  ManyToMany,
-  PrimaryGeneratedColumn,
-} from "typeorm";
-import { Book } from "../book/book.entity.js";
+import { Column, Entity, JoinColumn, ManyToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Book } from '../book/book.entity.js';
 
 @Entity()
 export class Author {
-  @PrimaryGeneratedColumn("uuid")
+  @PrimaryGeneratedColumn('uuid')
   readonly id!: string;
 
   @Column()

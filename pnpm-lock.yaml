@@ -10,6 +10,7 @@ specifiers:
   lodash.merge: 4.6.2
   nodemon: 2.0.22
   pg: 8.11.0
+  prettier: 2.8.8
   reflect-metadata: 0.1.13
   ts-node: 10.9.1
   type-graphql: 2.0.0-beta.2
@@ -34,6 +35,7 @@ devDependencies:
   '@types/node': 20.2.5
   dotenv: 16.0.3
   nodemon: 2.0.22
+  prettier: 2.8.8
   ts-node: 10.9.1_wanalbxtsppgcqemtlzr6bzfo4
   typedi: 0.10.0
   typescript: 5.0.4
@@ -1368,6 +1370,12 @@ packages:
     dependencies:
       xtend: 4.0.2
     dev: false
+
+  /prettier/2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
   /proxy-addr/2.0.7:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}

@@ -1,5 +1,5 @@
-import { Service } from "typedi";
-import { BookRepository } from "./book.repository.js";
+import { Service } from 'typedi';
+import { BookRepository } from './book.repository.js';
 
 @Service()
 export class BookService {

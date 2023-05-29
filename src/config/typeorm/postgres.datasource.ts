@@ -1,5 +1,5 @@
-import { DataSource } from "typeorm";
-import { dataSourceConfig } from "./datasource.js";
+import { DataSource } from 'typeorm';
+import { dataSourceConfig } from './datasource.js';
 
 const postgresDataSource = new DataSource(dataSourceConfig);
 

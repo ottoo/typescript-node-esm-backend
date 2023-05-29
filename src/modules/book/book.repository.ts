@@ -1,6 +1,6 @@
-import { Container, Service } from "typedi";
-import { Book } from "./book.entity.js";
-import { DataSource } from "typeorm";
+import { Container, Service } from 'typedi';
+import { Book } from './book.entity.js';
+import { DataSource } from 'typeorm';
 
 @Service()
 export class BookRepository {

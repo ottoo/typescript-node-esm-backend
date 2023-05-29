@@ -1,11 +1,11 @@
-import "reflect-metadata";
+import 'reflect-metadata';
 
-import { ApolloServer } from "@apollo/server";
-import { startStandaloneServer } from "@apollo/server/standalone";
-import { schema } from "./schema.js";
-import { DataSource } from "typeorm";
-import { dataSource } from "./config/typeorm/postgres.datasource.js";
-import { Container } from "typedi";
+import { ApolloServer } from '@apollo/server';
+import { startStandaloneServer } from '@apollo/server/standalone';
+import { schema } from './schema.js';
+import { DataSource } from 'typeorm';
+import { dataSource } from './config/typeorm/postgres.datasource.js';
+import { Container } from 'typedi';
 
 Container.set(DataSource, dataSource);
 
