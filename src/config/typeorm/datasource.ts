@@ -2,6 +2,7 @@ import * as dotenv from "dotenv";
 import { DataSourceOptions } from "typeorm";
 import { Author } from "../../modules/author/author.entity.js";
 import { Book } from "../../modules/book/book.entity.js";
+import { SnakeNamingStrategy } from "typeorm-naming-strategies";
 
 dotenv.config({ path: "./src/.env" });
 
@@ -17,4 +18,5 @@ export const dataSourceConfig: DataSourceOptions = {
       ? { rejectUnauthorized: false }
       : false,
   migrations: ["src/database/migrations/*.ts"],
+  namingStrategy: new SnakeNamingStrategy(),
 };
