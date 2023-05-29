@@ -1,7 +1,7 @@
 import { Column, Entity, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
 import { Author } from "../author/author.entity.js";
 
-@Entity({ name: "books" })
+@Entity()
 export class Book {
   @PrimaryGeneratedColumn("uuid")
   readonly id!: string;

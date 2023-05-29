@@ -1,6 +1,3 @@
-// Resolvers define how to fetch the types defined in your schema.
-// This resolver retrieves books from the "books" array above.
-
 import { Query, Resolver } from "type-graphql";
 import { Book } from "./book.type.js";
 import { Service } from "typedi";

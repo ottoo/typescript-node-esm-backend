@@ -4,7 +4,7 @@ import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { schema } from "./schema.js";
 import { DataSource } from "typeorm";
-import { dataSource } from "./config/typeorm/datasource.js";
+import { dataSource } from "./config/typeorm/postgres.datasource.js";
 import { Container } from "typedi";
 
 Container.set(DataSource, dataSource);
