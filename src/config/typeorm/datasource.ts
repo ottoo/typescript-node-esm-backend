@@ -10,10 +10,9 @@ export const dataSourceConfig: DataSourceOptions = {
   type: 'postgres',
   url: process.env.DATABASE_URL,
   synchronize: false,
+  migrationsRun: false,
   entities: [Author, Book],
-  logger: 'advanced-console',
-  logging: 'all',
+  logging: false,
   ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
-  migrations: ['src/database/migrations/*.ts'],
   namingStrategy: new SnakeNamingStrategy(),
 };
