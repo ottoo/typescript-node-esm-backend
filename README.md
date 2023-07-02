@@ -1,3 +1,5 @@
+![typescript-node-esm-backend](https://github.com/ottoo/typescript-node-esm-backend/actions/workflows/test.yml/badge.svg)
+
 # Example Apollo Server project
 
 This is a simple example of how to use Apollo Server 4 with TypeGraphQL and TypeORM, it also uses TypeDI for dependency injection. Database migrations are also set up in the `src/database/migrations` folder.
