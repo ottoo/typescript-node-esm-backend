@@ -5,6 +5,6 @@ export class Author {
   @Field(() => ID)
   id!: string;
 
-  @Field()
+  @Field(() => String)
   name!: string;
 }

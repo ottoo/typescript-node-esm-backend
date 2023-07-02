@@ -12,7 +12,7 @@ export class BookResolver {
 
   @Query(() => [Book])
   async books() {
-    return await this.bookService.getBooks();
+    return await this.bookService.getAllBooks();
   }
 
   @FieldResolver(() => [Author])

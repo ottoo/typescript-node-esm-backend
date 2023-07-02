@@ -5,7 +5,7 @@ import { BookRepository } from './book.repository.js';
 export class BookService {
   constructor(private readonly bookRepository: BookRepository) {}
 
-  async getBooks() {
+  async getAllBooks() {
     return await this.bookRepository.getAllBooks();
   }
 }

@@ -6,7 +6,7 @@ export class Book {
   @Field(() => ID)
   id!: string;
 
-  @Field()
+  @Field(() => String)
   title!: string;
 
   @Field(() => [Author])
